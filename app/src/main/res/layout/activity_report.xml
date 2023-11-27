@@ -52,13 +52,26 @@
                     android:inputType="textPersonName"
                     android:text="불법주정차" />
 
-                <EditText
-                    android:id="@+id/t2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:ems="10"
-                    android:hint="차량번호"
-                    android:inputType="textPersonName" />
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/t2"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="차량번호"
+                        android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/identifyButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인식하기" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/t3"
